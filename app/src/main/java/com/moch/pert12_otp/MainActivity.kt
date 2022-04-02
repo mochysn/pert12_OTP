@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity(), SmsListener {
             .addInterceptor(interceptor)
             .build()
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://pert12-otp.herokuapp.com/api/")
+            .baseUrl("https://server-otp.herokuapp.com/api/")
             .client(client)
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
